@@ -1,0 +1,39 @@
+{
+  "name": "plinth-web",
+  "version": "1.0.0",
+  "main": "dist/plinth.js",
+  "module": "dist/plinth.esm.js",
+  "types": "dist/plinth.d.ts",
+  "files": [
+    "dist",
+    "plinth.css"
+  ],
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusjengis/Plinth-Web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gusjengis/Plinth-Web/issues"
+  },
+  "homepage": "https://github.com/gusjengis/Plinth-Web#readme",
+  "description": "Plinth web styling and components",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.5"
+  }
+}
