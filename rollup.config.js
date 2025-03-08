@@ -1,5 +1,5 @@
 import typescript from 'rollup-plugin-typescript2';
-import css from 'rollup-plugin-css-only';
+import postcss from 'rollup-plugin-postcss';
 import pkg from './package.json';
 
 export default {
@@ -22,10 +22,10 @@ export default {
     typescript({
       useTsconfigDeclarationDir: true,
     }),
-    css({
-      output: 'dist/plinth.css'
+    postcss({
+      inject: true,  // Injects CSS into JS automatically
+      extract: false // Prevents separate CSS file, inlines it
     }),
   ],
   external: ['react', 'react-dom'],
 };
-

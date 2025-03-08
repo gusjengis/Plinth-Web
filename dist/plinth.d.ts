@@ -1,2 +1,2 @@
 import "./plinth.css";
-export declare const PlinthStyles: () => boolean;
+export declare const ApplyStyling: () => boolean;
