@@ -1,4 +1,4 @@
-./flake.lock
-./package-lock.json
+flake.lock
+package-lock.json
 ./node_modules/
 ./dist/
