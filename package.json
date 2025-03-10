@@ -1,6 +1,6 @@
 {
   "name": "plinth-web",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "sideEffects": true,
   "main": "dist/plinth.js",
   "module": "dist/plinth.esm.js",
